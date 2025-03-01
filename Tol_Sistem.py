@@ -8,7 +8,7 @@ RANDOM_SEED = 42
 SIM_TIME = 3600  # Simulasi 1 jam (3600 detik)
 ARRIVAL_RATE = 48  # Kedatangan kendaraan per menit (bisa bervariasi)
 SERVICE_TIME = 4  # Waktu layanan di tol elektronik (detik)
-NUM_TOLL_BOOTHS = 6  # Jumlah gerbang tol
+NUM_TOLL_BOOTHS = 3  # Jumlah gerbang tol
 
 random.seed(RANDOM_SEED)
 
@@ -73,10 +73,10 @@ if wait_times:
     
     plt.xlabel("Simulation Time (seconds)")
     plt.ylabel("Wait Time (seconds)")
-    plt.title("Comparison of Customer Wait Time vs Simulation Time")
+    plt.title("Customer Wait Time vs Simulation Time in [WeekEnd 6 Gate]")
     plt.grid(True, linestyle='--', alpha=0.7)
     plt.legend()
-    plt.savefig('simulation_graph_WE_V2.png')  # Save the graph
+    plt.savefig('simulation_graph_WE.png')  # Save the graph
     plt.show()
 else:
     print("\nNo vehicles were processed.")
